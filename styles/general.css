@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 60px;
+  margin-right: 60px;
+}
+
+
+
+#sidebar-container {
+  margin-top: 12;
+  margin-bottom: none;
+  margin-left: none;
+  margin-right: none;
+
+}
+
+#footer-container {
+  width: 100vw;
+  color: white;
+  text-align: start;
+  margin-bottom: 0;
+  background-color: brown;
+}

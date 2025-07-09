@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Clone</title>
+  <link rel="icon" href="pictures/INSTA-MINILOGO.jpeg" />
+  <link rel="stylesheet" href="styles/general.css" />
+  <link rel="stylesheet" href="styles/login.css" />
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+  
+  <div class="container">
+    <main class="main">
+      <div id="sidebar-container"></div>
+      <div id="login-container"></div> 
+    </main>
+    <div id="footer-container"></div>
+  </div>
+
+
+  <script>
+    fetch('login.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('login-container').innerHTML = data;
+      })
+      .catch(err => console.error('Error loading login.html:', err));
+
+    fetch('sidebar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('sidebar-container').innerHTML = data;
+      })
+      .catch(err => console.error('Error loading sidebar.html:', err));
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      })
+      .catch(err => console.error('Error loading sidebar.html:', err));
+
+  </script>
+</body>
+</html>
